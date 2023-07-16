@@ -1,0 +1,353 @@
+:root{
+/* Colors */
+/* Primary */
+    --clr-Pink: hsl(322, 100%, 66%);
+    --clr-Pink-active: hsl(322, 100%, 72%);
+/* Neutral */
+    --clr-Very-Pale-Cyan: hsl(193, 100%, 96%);
+    --clr-Very-Dark-Cyan: hsl(192, 100%, 9%);
+    --clr-Grayish-Blue: hsl(208, 11%, 55%);
+
+
+/* Typography */
+/* Body Copy */
+    --fs: 18px;
+/* Headings */
+    --ff-poppins: 'Poppins', sans-serif;
+    --fw-poppins: 600;
+
+/* Body, Call-to-actions */
+    --ff-open-sans: 'Open Sans', sans-serif;
+    --fw-open-sans-light: 400;
+    --fw-open-sans-bold: 700;
+}
+
+/* ## Icons
+
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/) */
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-size: var(--fs);
+    font-family: var(--ff-open-sans);
+    font-weight: var(--fw-open-sans-light);
+    color: var(--clr-Very-Dark-Cyan);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+.flex{
+    display: flex;
+}
+
+h1{
+    font-size: 2.6rem;
+    line-height: 1.5;
+    text-align: left;
+    font-family: var(--ff-poppins);
+}
+
+span{
+    font-size: 1.7rem;
+    font-family: var(--ff-poppins);
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 4rem;
+}
+
+.home{
+    background-color: var(--clr-Very-Pale-Cyan);
+    background-image: url(/images/bg-hero-desktop.svg);
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+nav{
+    justify-content: space-between;
+}
+
+.button__white{
+    background-color: white;
+    color: var(--clr-Very-Dark-Cyan);
+    font-weight: var(--fw-open-sans-bold);
+    padding: .8rem 3.3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px var(--clr-Grayish-Blue);
+}
+
+.getStarted__mockups{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.getStarted{
+    flex: 1;
+    flex-direction: column;
+    gap: 1.8rem;
+}
+
+.button__pink{
+    text-align: center;
+    background-color: var(--clr-Pink);
+    color: var(--clr-Very-Dark-Cyan);
+    font-weight: var(--fw-open-sans-bold);
+    padding: .8rem 3.3rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    max-width: 300px;
+    color: var(--clr-Very-Pale-Cyan);
+    box-shadow: 2px 2px 6px var(--clr-Grayish-Blue);
+}
+
+.button__pink:hover{
+    background-color: var(--clr-Pink-active)
+}
+
+.mockups{
+    flex: 1.1;
+    justify-content: flex-end;
+}
+
+.mockups img{
+    min-width: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+.audience{
+    padding-top: 6rem;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.audience__section{
+    line-height: 1.5;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem 2rem 3rem 6rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 6px var(--clr-Grayish-Blue);
+}
+
+.span__p{
+    flex: 1.1;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.span__p p{
+    color: var(--clr-Grayish-Blue);
+}
+
+.illustration__img img{
+    min-width: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.illustration__img{
+    flex: 1;
+}
+
+.floating__section{
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    top: 70px;
+    height: 180px;
+    max-width: 650px;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 6px var(--clr-Very-Dark-Cyan);
+}
+
+footer{
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-evenly;
+    color: var(--clr-Very-Pale-Cyan);
+    padding: 7rem 4rem 3rem 4rem;
+    background-color: var(--clr-Very-Dark-Cyan);
+}
+
+footer p{
+    font-size: .9rem;
+}
+
+footer a{
+    color: var(--clr-Very-Pale-Cyan);
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.footer__logo{
+    width: 100%;
+}
+
+.footer__logo img{
+    max-width: 150px;
+    height: auto;
+}
+
+.footer__contacts{
+    flex: 1;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact{
+    gap: 1rem;
+}
+
+.footer__info{
+    justify-content: space-evenly;
+    align-items: stretch;
+    flex: 1;
+}
+
+.infos{
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer__rights{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.socials{
+    gap: 1rem;
+}
+
+.socials__logo{
+    padding: .5rem;
+    border: 1px solid var(--clr-Very-Pale-Cyan);
+    border-radius: 50%;
+}
+
+.socials__logo:nth-child(1){
+    padding: .5rem .7rem;
+}
+
+.socials__logo:nth-child(3){
+    padding: .5rem .6rem;
+}
+
+.socials__logo:hover{
+    color: var(--clr-Pink);
+}
+
+@media (max-width:768px){
+    .footer__rights{
+        gap: 1.3rem;
+    }
+    
+    .socials{
+        align-self: center;
+    }
+}
+
+@media (max-width:425px){
+    nav .logo img{
+        width: 122px;
+        height: auto;
+    }
+    .button__white{
+        padding: .8rem .8rem;
+    }
+
+    .home{
+        gap: 5rem;
+    }
+
+    .button__pink, .button__white{
+        font-size: .7rem;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 1.7rem;
+        line-height: 1;
+        text-align: center;
+    }
+
+    span{
+        font-size: 1.3rem;
+    }
+
+    p{
+        font-size: .8rem;
+    }
+    
+    section{
+        padding: 2.5rem;
+    }
+
+    .audience__section{
+        flex-direction: column;
+        padding: 2.2rem;
+        text-align: center;
+    }
+
+    .audience__section:nth-child(1), .audience__section:nth-child(3){
+        flex-direction: column-reverse;
+    }
+
+    .floating__section{
+        padding: 2rem;
+        width: 300px;
+    }
+
+    .floating__section span{
+        font-size: .8rem;
+    }
+
+    footer{
+        padding: 6.5rem 2rem 2rem 2rem;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+
+    .footer__info{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .infos{
+        gap: 1rem;
+    }
+
+    .footer__rights{
+        gap: 1.5rem;
+    }
+}
+
+
+/* .attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); } */
